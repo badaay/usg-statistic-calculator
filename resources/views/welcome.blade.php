@@ -464,7 +464,7 @@
         },
         series: [{
                 name: "User Activity",
-                data: [1276, 1007, 4561, 746, 42]
+                data: userActivity
             }
 
         ],
