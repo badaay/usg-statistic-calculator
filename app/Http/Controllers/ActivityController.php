@@ -58,17 +58,7 @@ class ActivityController extends Controller
                 }
             }
             $usageStats[] = round($accumulateDay);
-            dump($usageStats);
         }
-        // $activity = $activity
-        // ->map(function ($item) use ($users) {
-        //     // if( in_array($item['email'], $users)){
-
-        //     // }
-        //     return [
-        //         'email' => $item['email']
-        //     ];
-        // });
         $activity = $usageStats;
         return view('welcome', compact('activity', 'users'));
     }
